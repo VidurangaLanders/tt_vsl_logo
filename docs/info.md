@@ -9,12 +9,22 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project implements the VSL (Very Simple Logic) Logo using Verilog for the Tiny Tapeout initiative. It demonstrates a compact digital design that renders or processes logo-related logic patterns in hardware, showcasing basic digital logic design principles suitable for silicon implementation through the Tiny Tapeout program.
 
 ## How to test
 
-Explain how to use your project
+1. Ensure you have Verilog simulation tools installed (e.g., Icarus Verilog, Verilator)
+2. Review the testbench files included in the repository
+3. Run simulations using the provided Makefile:
+   ```bash
+   make test
+   ```
+4. Verify the output matches expected logo generation/rendering patterns
+5. For hardware implementation, use the provided Makefile to synthesize:
+   ```bash
+   make build
+   ```
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware required. This is a pure Verilog design intended for FPGA or ASIC implementation through Tiny Tapeout.
